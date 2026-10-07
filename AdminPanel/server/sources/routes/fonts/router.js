@@ -40,7 +40,7 @@ const FONT_SIGNATURES = [
 const ALLOWED_EXTENSIONS = new Set(FONT_SIGNATURES.map(s => s.ext));
 
 // EO installation root — used for font dir resolution.
-const EO_ROOT = process.env.EO_ROOT || '/var/www/euro-office/documentserver';
+const EO_ROOT = process.env.EO_ROOT || '/var/www/elixiroffice/documentserver';
 
 // Upload size limit — read from the same config key used by DocService and the config router.
 const cfgUploadLimit = config.get('services.CoAuthoring.server.limits_tempfile_upload');

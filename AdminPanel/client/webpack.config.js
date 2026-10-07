@@ -6,7 +6,7 @@ const dotenv = require('dotenv');
 
 const outputDir = process.env.BUILD_ROOT ? path.resolve(process.env.BUILD_ROOT, 'build') : path.resolve(__dirname, 'build');
 
-const appName = process.env.APP_NAME || 'Euro-Office';
+const appName = process.env.APP_NAME || 'ElixirOffice';
 
 module.exports = (env, argv) => {
   const mode = argv && argv.mode ? argv.mode : 'development';
