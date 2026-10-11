@@ -46,7 +46,7 @@ export default function Login() {
           <p className={styles.description}>
             Need to reset your password? See{' '}
             <a
-              href='https://helpcenter.onlyoffice.com/docs/installation/docs-admin-panel.aspx#passwordresetrecovery_block'
+              href='https://github.com/elixiroffice'
               target='_blank'
               rel='noopener noreferrer'
             >

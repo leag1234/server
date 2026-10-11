@@ -3,7 +3,7 @@ import {generateDocServerToken} from '../../api';
 import {getBasename, getDocServicePath} from '../../utils/paths';
 
 /**
- * Preview page component with ONLYOFFICE Document Editor
+ * Preview page component with ElixirOffice Document Editor
  * @param {Object} props - Component props
  * @returns {JSX.Element} Preview component
  */
@@ -14,7 +14,7 @@ function Preview(props) {
   const editorRef = useRef(null);
 
   /**
-   * Initialize the ONLYOFFICE editor
+   * Initialize the ElixirOffice editor
    */
   const initEditor = useCallback(async () => {
     const userName = user?.email?.split('@')[0] || 'admin';
@@ -76,7 +76,7 @@ function Preview(props) {
   }, [user]);
 
   useEffect(() => {
-    // Load ONLYOFFICE API script
+    // Load ElixirOffice API script
     const script = document.createElement('script');
     script.src = `${getDocServicePath()}/web-apps/apps/api/documents/api.js`;
     script.async = true;

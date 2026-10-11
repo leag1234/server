@@ -412,7 +412,7 @@ Available functions:\n";
 
 	window.Asc.plugin.onTranslate = function()
 	{
-		document.getElementById("header").innerHTML = window.Asc.plugin.tr("ONLYOFFICE AI Agent");
+		document.getElementById("header").innerHTML = window.Asc.plugin.tr("ElixirOffice AI Agent");
 		document.getElementById("chatInput").placeholder = window.Asc.plugin.tr("Enter message") + "...";
 		document.getElementById("goId").innerHTML = window.Asc.plugin.tr("Go");
 	};

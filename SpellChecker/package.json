@@ -1,7 +1,7 @@
 {
   "name": "spellchecker",
   "version": "1.0.1",
-  "homepage": "https://www.onlyoffice.com",
+  "homepage": "https://github.com/elixiroffice",
   "private": true,
   "bin": "sources/server.js",
   "dependencies": {
