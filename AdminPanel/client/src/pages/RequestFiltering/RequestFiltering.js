@@ -108,7 +108,7 @@ function RequestFiltering() {
             label='Allow Private IP Addresses'
             checked={localSettings.allowPrivateIPAddress}
             onChange={value => handleFieldChange('allowPrivateIPAddress', value)}
-            description='Allow requests from private IP address ranges (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16). Disable this to block requests from internal networks.'
+            description='Allow requests from RFC 1918 private IP address ranges. Disable this to block requests from internal networks.'
             error={getFieldError(CONFIG_PATHS.allowPrivateIPAddress)}
           />
         </div>

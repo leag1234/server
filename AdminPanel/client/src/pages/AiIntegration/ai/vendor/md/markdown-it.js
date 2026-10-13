@@ -5850,7 +5850,7 @@
       at_pos = text.indexOf("@");
       if (at_pos >= 0) {
         // We can't skip this check, because this cases are possible:
-        // 192.168.1.1@gmail.com, my.in@example.com
+        // 203.0.113.10@gmail.com, my.in@example.com
         if ((me = text.match(this.re.email_fuzzy)) !== null) {
           shift = me.index + me[1].length;
           next = me.index + me[0].length;
