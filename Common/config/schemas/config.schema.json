@@ -153,7 +153,7 @@
                     "properties": {
                       "address": {
                         "type": "string",
-                        "description": "IP address, CIDR notation, or '*' for all (e.g., '203.0.113.0/24', '10.0.0.1', '*')"
+                        "description": "IP address, CIDR notation, or '*' for all (e.g., '10.0.0.0/24', '10.0.0.1', '*')"
                       },
                       "allowed": {
                         "type": "boolean",
