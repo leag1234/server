@@ -240,7 +240,6 @@ docsCoServer.install(server, app, () => {
   app.post('/downloadas/:docid', rawFileParser, canvasService.downloadAs);
   app.post('/savefile/:docid', rawFileParser, canvasService.saveFile);
   app.get('/printfile/:docid/:filename', canvasService.printFile);
-  app.get('/downloadfile/:docid', canvasService.downloadFile);
   app.post('/downloadfile/:docid', rawFileParser, canvasService.downloadFile);
   app.get('/healthcheck', utils.checkClientIp, docsCoServer.healthCheck);
 
@@ -250,7 +249,7 @@ docsCoServer.install(server, app, () => {
       ctx.initFromRequest(req);
       //todo
       // yield ctx.initTenantCache();
-      res.send(utils.getBaseUrlByRequest(ctx, req));
+      res.type('text/plain').send(utils.getBaseUrlByRequest(ctx, req));
     } catch (err) {
       ctx.logger.error('baseurl error: %s', err.stack);
     }
